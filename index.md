@@ -1,8 +1,9 @@
 ## Hi there! 👋 I'm Ravi Kumawat
 
-# RAVI KUMAWAT || 21F1004119
-- **Email:** 21f1004119@ds.study.iitm.ac.in
+# RAVI KUMAWAT 
+- **Email:** ravikumawat7716@gmail.com
 - **Phone:** +91 9358557716
+- **Linkedin:** https://linkedin.com/in/ravikumawat7716
 
 ## Education
 
