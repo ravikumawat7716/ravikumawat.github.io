@@ -1,5 +1,89 @@
 ## Hi there! 👋 I'm Ravi Kumawat
 
+# RAVI KUMAWAT || 21F1004119
+- **Email:** 21f1004119@ds.study.iitm.ac.in
+- **Phone:** +91 9358557716
+
+## EDUCATION
+| Program | Institution | %/CGPA | Year |
+|---------|-------------|--------|------|
+| B.S. in Data Science & Applications | IIT Madras, Chennai | 7.3 | 2021-2025 |
+| Class XII (Rajasthan State Board) | Bansal Inst. of Edu Sr Sec School, Chomu, Jaipur | 88.60% | 2019 |
+| Class X (Rajasthan State Board) | SKVM Sr Sec School, Niwana, Jaipur | 91.17% | 2017 |
+
+## SCHOLASTIC ACHIEVEMENTS
+- Selected for Merit Cum Means Scholarship by L&T Technology Services.
+- Selected for Tata Capital Pankh Scholarship.
+- Presented a Paper on Big Data Analytics at DigiFest 2022.
+- Selected for 100% Scholarship by Govt of Rajasthan for pursuing Certification Courses from Rajiv Gandhi Centre for Advanced Technology (R-CAT Rajasthan).
+
+## RELEVANT COURSES AND SKILLS
+### Programming
+- Computational Thinking, Python Programming, Java Programming, Data Structures & Algorithms, System Commands
+- Data Analysis using Numpy, Pandas & Matplotlib, Program Development using Python & Java, Error Handling, Linux Shell - Bash Scripting
+### Development
+- Modern Application Development - I, Modern Application Development - II
+- Web Application Development using HTML, CSS, Bootstrap, JavaScript, Flask, Jinja, VueJs, SQLite
+### Database
+- Database Management Systems
+- SQL, Application Backend Development, Database Design, Database Management using Postgresql
+### Management
+- Business Data Management, Business Analytics
+- Micro Economics, Organization, Interpretation & Presentation of Data using Excel, Data Centric Business Models Development
+### Data Science
+- Mathematics - I, II
+- Statistics - I, II
+- Machine Learning Foundations, Machine Learning Techniques, Machine Learning Practice*, Tools in Data Science*
+- Linear Algebra, Matrix Manipulation, Vector Calculus, Hypothesis Testing, Parameter Estimation, Statistical Modeling, Probability & Optimization
+- Regression Models using Tensorflow, Scikit Learn
+### Humanities
+- English - I, II
+- Communication Skills
+* - Ongoing courses
+
+## PROFESSIONAL EXPERIENCES
+### Internship at PanIIT (Aug ’21 – Sep ’21)
+- Worked as an event coordinator for PanIIT World of Technology (PIWOT) Summit 2021
+- Collected Contact Information of Engineering Institutions for PIWOT’s Marketing
+- Coordinated with Startup Founders & Jury in PIWOT’s Idea Pitching Event
+
+## PROJECTS
+### Quantified SelfApp (Jan ’22 - Apr ’22)
+- Course Project - Modern Application Development I
+- Implemented CRUD using Flask & SQLite
+- Web application for recording & tracking habits.
+- [GitHub Repository](https://github.com/ravikumawat7716/QuantifiedSelfApp)
+- [Hosted Application URL](https://quantified-selfapp.azurewebsites.net/)
+
+### Show Ticketing (Jan ’22 - Apr ’22)
+- Course Project - Modern Application Development II
+- Implemented Backend Using Flask & Frontend Using Vue.js
+- Web application for theatre management & ticket booking.
+- [GitHub Repository](https://github.com/ravikumawat7716/Show-Ticketing)
+- [Hosted Application URL](https://13.235.83.235/login)
+
+## VOLUNTEER EXPERIENCE
+- Graphics Designer, Sundarbans House - IIT Madras BS Degree (Aug ’21 – Apr ’22)
+  - Created Social Media Posts for various inter house events.
+- Publicity Coordinator, Shaastra IIT Madras (May ’18 – Jan ’19)
+  - Associated with the team behind India’s largest completely student-run technical extravaganza - Shaastra 2022.
+
+## CERTIFICATIONS
+- IIRS - ISRO
+  - Machine Learning to Deep Learning: A Journey for Remote Sensing Data Classification
+- Microsoft
+  - Microsoft Azure Fundamentals (AZ-900)
+- Google
+  - Fundamentals of Digital Marketing
+- Vardhman Mahaveer Open University, Kota
+  - Rajasthan State Certificate in Information Technology
+
+## PARTICIPATION IN TECHNICAL EVENTS
+- Participated in a Hackathon organized by iNeuron at JECRC University, Jaipur. Built a Blog Application Project.
+- Attended Google Cloud Community Days 2022, Jaipur Edition.
+- Participated in KHOJ Startup Yatra organized by Venture Catalysts at BITS Pilani. Pitched our idea & Secured a place in Top 5 winning Teams.
+
+
 - 🌱 Student at IIT Madras
 
 
@@ -118,85 +202,3 @@ _(2021 - 2025)_
 
 -------------------------------------------------------
 
-# RAVI KUMAWAT || 21F1004119
-- **Email:** 21f1004119@ds.study.iitm.ac.in
-- **Phone:** +91 9358557716
-
-## EDUCATION
-| Program | Institution | %/CGPA | Year |
-|---------|-------------|--------|------|
-| B.S. in Data Science & Applications | IIT Madras, Chennai | 7.3 | 2021-2025 |
-| Class XII (Rajasthan State Board) | Bansal Inst. of Edu Sr Sec School, Chomu, Jaipur | 88.60% | 2019 |
-| Class X (Rajasthan State Board) | SKVM Sr Sec School, Niwana, Jaipur | 91.17% | 2017 |
-
-## SCHOLASTIC ACHIEVEMENTS
-- Selected for Merit Cum Means Scholarship by L&T Technology Services.
-- Selected for Tata Capital Pankh Scholarship.
-- Presented a Paper on Big Data Analytics at DigiFest 2022.
-- Selected for 100% Scholarship by Govt of Rajasthan for pursuing Certification Courses from Rajiv Gandhi Centre for Advanced Technology (R-CAT Rajasthan).
-
-## RELEVANT COURSES AND SKILLS
-### Programming
-- Computational Thinking, Python Programming, Java Programming, Data Structures & Algorithms, System Commands
-- Data Analysis using Numpy, Pandas & Matplotlib, Program Development using Python & Java, Error Handling, Linux Shell - Bash Scripting
-### Development
-- Modern Application Development - I, Modern Application Development - II
-- Web Application Development using HTML, CSS, Bootstrap, JavaScript, Flask, Jinja, VueJs, SQLite
-### Database
-- Database Management Systems
-- SQL, Application Backend Development, Database Design, Database Management using Postgresql
-### Management
-- Business Data Management, Business Analytics
-- Micro Economics, Organization, Interpretation & Presentation of Data using Excel, Data Centric Business Models Development
-### Data Science
-- Mathematics - I, II
-- Statistics - I, II
-- Machine Learning Foundations, Machine Learning Techniques, Machine Learning Practice*, Tools in Data Science*
-- Linear Algebra, Matrix Manipulation, Vector Calculus, Hypothesis Testing, Parameter Estimation, Statistical Modeling, Probability & Optimization
-- Regression Models using Tensorflow, Scikit Learn
-### Humanities
-- English - I, II
-- Communication Skills
-* - Ongoing courses
-
-## PROFESSIONAL EXPERIENCES
-### Internship at PanIIT (Aug ’21 – Sep ’21)
-- Worked as an event coordinator for PanIIT World of Technology (PIWOT) Summit 2021
-- Collected Contact Information of Engineering Institutions for PIWOT’s Marketing
-- Coordinated with Startup Founders & Jury in PIWOT’s Idea Pitching Event
-
-## PROJECTS
-### Quantified SelfApp (Jan ’22 - Apr ’22)
-- Course Project - Modern Application Development I
-- Implemented CRUD using Flask & SQLite
-- Web application for recording & tracking habits.
-- [GitHub Repository](https://github.com/ravikumawat7716/QuantifiedSelfApp)
-- [Hosted Application URL](https://quantified-selfapp.azurewebsites.net/)
-
-### Show Ticketing (Jan ’22 - Apr ’22)
-- Course Project - Modern Application Development II
-- Implemented Backend Using Flask & Frontend Using Vue.js
-- Web application for theatre management & ticket booking.
-- [GitHub Repository](https://github.com/ravikumawat7716/Show-Ticketing)
-- [Hosted Application URL](https://13.235.83.235/login)
-
-## VOLUNTEER EXPERIENCE
-- Graphics Designer, Sundarbans House - IIT Madras BS Degree (Aug ’21 – Apr ’22)
-  - Created Social Media Posts for various inter house events.
-- Publicity Coordinator, Shaastra IIT Madras (May ’18 – Jan ’19)
-  - Associated with the team behind India’s largest completely student-run technical extravaganza - Shaastra 2022.
-
-## CERTIFICATIONS
-- IIRS - ISRO
-  - Machine Learning to Deep Learning: A Journey for Remote Sensing Data Classification
-- Microsoft
-  - Microsoft Azure Fundamentals (AZ-900)
-- Google
-  - Fundamentals of Digital Marketing
-- Vardhman Mahaveer Open University, Kota
-  - Rajasthan State Certificate in Information Technology
-
-## PARTICIPATION IN TECHNICAL EVENTS
-- Participated in a Hackathon organized by iNeuron at JECRC University, Jaipur. Built a Blog Application Project.
-- Attended Google Cloud Community Days 2022, Jaipur Edition.
-- Participated in KHOJ Startup Yatra organized by Venture Catalysts at BITS Pilani. Pitched our idea & Secured a place in Top 5 winning Teams.
