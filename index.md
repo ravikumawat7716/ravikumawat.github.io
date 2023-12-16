@@ -45,15 +45,7 @@ Users and admins receive email notifications for various events.
 
 <!-- List the email notification details here -->
 
-#### Special Thanks
 
-I want to express my gratitude to Nitin Chandrachoodan Sir, Thejesh GN Sir, Abhishek Rajput Sir, and Narendra Mishra Sir for their invaluable guidance and teaching throughout Modern Application Development I and II. Your live sessions were instrumental in making this project a reality. 🙏
-
-*Hashtag #ModernApplicationDevelopment*
-
-*IIT Madras BS in Data Science Programme*
-
-📝 To know more about me: [https://www.ravikumawat.engineer/](https://www.ravikumawat.engineer/)
 
 ---
 
