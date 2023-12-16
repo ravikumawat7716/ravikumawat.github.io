@@ -4,12 +4,39 @@
 - **Email:** 21f1004119@ds.study.iitm.ac.in
 - **Phone:** +91 9358557716
 
-## EDUCATION
-| Program | Institution | %/CGPA | Year |
-|---------|-------------|--------|------|
-| B.S. in Data Science & Applications | IIT Madras, Chennai | 7.3 | 2021-2025 |
-| Class XII (Rajasthan State Board) | Bansal Inst. of Edu Sr Sec School, Chomu, Jaipur | 88.60% | 2019 |
-| Class X (Rajasthan State Board) | SKVM Sr Sec School, Niwana, Jaipur | 91.17% | 2017 |
+## Education
+
+<table>
+<thead>
+<tr>
+<th>Program</th>
+<th>Institution</th>
+<th>%/CGPA</th>
+<th>Year</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>B.S. in Data Science &amp; Applications</td>
+<td>IIT Madras, Chennai</td>
+<td>7.3</td>
+<td>2021-2025</td>
+</tr>
+<tr>
+<td>Class XII (Rajasthan State Board)</td>
+<td>Bansal Inst. of Edu Sr Sec School, Chomu, Jaipur</td>
+<td>88.60%</td>
+<td>2019</td>
+</tr>
+<tr>
+<td>Class X (Rajasthan State Board)</td>
+<td>SKVM Sr Sec School, Niwana, Jaipur</td>
+<td>91.17%</td>
+<td>2017</td>
+</tr>
+</tbody>
+</table>
+
 
 ## SCHOLASTIC ACHIEVEMENTS
 - Selected for Merit Cum Means Scholarship by L&T Technology Services.
