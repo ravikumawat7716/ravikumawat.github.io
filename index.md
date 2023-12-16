@@ -1,7 +1,7 @@
 ## Hi there! 👋 I'm Ravi Kumawat
 
 - 🌱 Student at IIT Madras
-- 🌱 I’m currently learning Web Application Development & DBMS
+
 
 ### 💬 About me
 
@@ -9,13 +9,6 @@ I pride myself in being a Passionate Python Developer and a Web Developer. I'm a
 
 ### 🤝 Connect with me
 
-[![Dev.to](https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/dev-dot-to.svg)](https://dev.to/ravikumawat7716)
-[![Twitter](https://logos-world.net/wp-content/uploads/2020/04/Twitter-Logo.png)](https://twitter.com/ravikumawat7716)
-[![LinkedIn](https://cdn-icons-png.flaticon.com/512/174/174857.png)](https://linkedin.com/in/ravikumawat7716/)
-[![Instagram](https://cdn-icons-png.flaticon.com/512/1384/1384063.png)](https://www.instagram.com/ravikumawat7716/)
-[![CodeChef](https://cdn.jsdelivr.net/npm/simple-icons@3.1.0/icons/codechef.svg)](https://www.codechef.com/users/iitm21f1004119)
-[![HackerRank](https://www.hackerrank.com/blog/wp-content/uploads/blog-no-img-cursorlogo-e1588888720902.png)](https://www.hackerrank.com/ravikumawat7716)
-[![Kaggle](https://www.kaggle.com/static/images/site-logo.svg)](https://kaggle.com/ravikumawat)
 
 ### 📝✂ Languages and Tools
 
