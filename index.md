@@ -3,7 +3,7 @@
 # RAVI KUMAWAT 
 - **Email:** ravikumawat7716@gmail.com
 - **Phone:** <a href="tel:+919358557716">+91 9358557716</a>
-- **Linkedin:** https://linkedin.com/in/ravikumawat7716
+- **Linkedin:** <a href="https://www.linkedin.com/in/ravikumawat7716">@ravikumawat7716</a>
 
 ## Education
 
