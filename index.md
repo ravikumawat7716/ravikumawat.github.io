@@ -62,3 +62,57 @@ Users and admins receive email notifications for various events.
 ---
 
 *Feel free to reach out to me on any of the platforms above! Let's connect and collaborate!*
+
+# Ravi Kumawat
+
+- **Location:** Chennai, Tamil Nadu, India
+- **LinkedIn:** [LinkedIn Profile](#your-linkedin-profile)
+
+## Summary
+Hi, I am Ravi Kumawat from Jaipur, Rajasthan. I am a student at IIT Madras, pursuing a degree in Data Science and Applications. I am currently focusing on learning Data Science and Scalable AI Applications Development. Proficient in web applications development using Python, Flask, VueJs.
+
+## Experience
+
+### Sundarbans House IITM BS Degree
+**Group Leader**
+_September 2023 - Present (4 months)_
+Jaipur, Rajasthan, India
+
+### R-CAT Rajasthan
+**Trainee**
+_March 2023 - Present (10 months)_
+Jaipur, Rajasthan, India
+
+### PanIIT Alumni India
+**PIWOT 2023 Marketing Team Member**
+_September 2023 - December 2023 (4 months)_
+Bengaluru, Karnataka, India
+
+### PanIIT Alumni India
+**PIWOT 2021 Event Coordinator & Marketing Coordinator**
+_August 2021 - September 2021 (2 months)_
+New Delhi, Delhi, India
+
+## Education
+
+### Indian Institute of Technology, Madras
+**Bachelor of Science - BS, Data Science and Applications**
+_(2021 - 2025)_
+
+## Certifications and Achievements
+- Coding for Marketers Course
+- Volunteer at Shaastra 2022
+- Certificate of Internship
+- The story of Photoelectric Effect - Course Certificate
+- R-CAT Quizathon Certificate
+- Honors-Awards
+  - L&T Merit Cum Means Scholarship
+  - TATA Capital Pankh Scholarship
+
+## Skills
+- Data Science
+- Scalable AI Applications Development
+- Web Applications Development
+  - Python, Flask, VueJs
+- AZ900 Certified
+
