@@ -3,7 +3,7 @@
 - **Email:** ravikumawat7716@gmail.com
 - **Phone:** <a href="tel:+919358557716">+91 9358557716</a>
 - **Linkedin:** <a href="https://www.linkedin.com/in/ravikumawat7716">@ravikumawat7716</a>
--**Resume:** <a href="https://drive.google.com/u/0/uc?id=1ED7RtH7nO-fCMXZWMVmjo5WtbxTwRd0V&export=download">Click here to download</a>
+-  **Resume:** <a href="https://drive.google.com/u/0/uc?id=1ED7RtH7nO-fCMXZWMVmjo5WtbxTwRd0V&export=download">Click here to download</a>
 
 ## Education
 
