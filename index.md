@@ -1,9 +1,17 @@
 ## Hi there! 👋 I'm Ravi Kumawat
 
-- **Email:** ravikumawat7716@gmail.com
+### 💬 About me
+
+I pride myself in being a Passionate Python Developer and a Web Developer. I'm always looking to be challenged and to challenge others. I'm pursuing my Bachelors in Data Science and Applications from IIT Madras.
+
+### 🤝 Connect with me
+
+- **Email:** <a href="mailto:ravikumawat7716@gmail.com">ravikumawat7716@gmail.com</a>
 - **Phone:** <a href="tel:+919358557716">+91 9358557716</a>
 - **Linkedin:** <a href="https://www.linkedin.com/in/ravikumawat7716">@ravikumawat7716</a>
 -  **Resume:** <u><a href="https://drive.google.com/u/0/uc?id=1ED7RtH7nO-fCMXZWMVmjo5WtbxTwRd0V&export=download">Click here to download</a></u>
+
+- **Location:** Jaipur , Rajasthan , India
 
 ## Education
 
@@ -90,41 +98,6 @@
 - [GitHub Repository](https://github.com/ravikumawat7716/Show-Ticketing)
 - [Hosted Application URL](https://13.235.83.235/login)
 
-## VOLUNTEER EXPERIENCE
-- Graphics Designer, Sundarbans House - IIT Madras BS Degree (Aug ’21 – Apr ’22)
-  - Created Social Media Posts for various inter house events.
-- Publicity Coordinator, Shaastra IIT Madras (May ’18 – Jan ’19)
-  - Associated with the team behind India’s largest completely student-run technical extravaganza - Shaastra 2022.
-
-## CERTIFICATIONS
-- IIRS - ISRO
-  - Machine Learning to Deep Learning: A Journey for Remote Sensing Data Classification
-- Microsoft
-  - Microsoft Azure Fundamentals (AZ-900)
-- Google
-  - Fundamentals of Digital Marketing
-- Vardhman Mahaveer Open University, Kota
-  - Rajasthan State Certificate in Information Technology
-
-## PARTICIPATION IN TECHNICAL EVENTS
-- Participated in a Hackathon organized by iNeuron at JECRC University, Jaipur. Built a Blog Application Project.
-- Attended Google Cloud Community Days 2022, Jaipur Edition.
-- Participated in KHOJ Startup Yatra organized by Venture Catalysts at BITS Pilani. Pitched our idea & Secured a place in Top 5 winning Teams.
-
-
-- 🌱 Student at IIT Madras
-
-
-### 💬 About me
-
-I pride myself in being a Passionate Python Developer and a Web Developer. I'm always looking to be challenged and to challenge others. I'm pursuing my Bachelors in Data Science and Applications from IIT Madras.
-
-### 🤝 Connect with me
-
-
-### 📝✂ Languages and Tools
-
-<!-- Your existing languages and tools section -->
 
 ### 🚀 Latest Project: Modern Application Development II
 
@@ -157,32 +130,6 @@ Users and admins receive email notifications for various events.
 
 <!-- List the email notification details here -->
 
-
-
----
-
-**Stats**
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs?username=ravikumawat7716&show_icons=true&locale=en&layout=compact)
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=ravikumawat7716&show_icons=true&locale=en)
-![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=ravikumawat7716)
-
-**GitHub Trophies**
-
-[![GitHub Trophies](https://github-profile-trophy.vercel.app/?username=ravikumawat7716)](https://github.com/ryo-ma/github-profile-trophy)
-
----
-
-*Feel free to reach out to me on any of the platforms above! Let's connect and collaborate!*
-
-# Ravi Kumawat
-
-- **Location:** Chennai, Tamil Nadu, India
-- **LinkedIn:** [LinkedIn Profile](#your-linkedin-profile)
-
-## Summary
-Hi, I am Ravi Kumawat from Jaipur, Rajasthan. I am a student at IIT Madras, pursuing a degree in Data Science and Applications. I am currently focusing on learning Data Science and Scalable AI Applications Development. Proficient in web applications development using Python, Flask, VueJs.
-
 ## Experience
 
 ### Sundarbans House IITM BS Degree
@@ -205,28 +152,73 @@ Bengaluru, Karnataka, India
 _August 2021 - September 2021 (2 months)_
 New Delhi, Delhi, India
 
-## Education
+## VOLUNTEER EXPERIENCE
+- Graphics Designer, Sundarbans House - IIT Madras BS Degree (Aug ’21 – Apr ’22)
+  - Created Social Media Posts for various inter house events.
+- Publicity Coordinator, Shaastra IIT Madras (May ’18 – Jan ’19)
+  - Associated with the team behind India’s largest completely student-run technical extravaganza - Shaastra 2022.
 
-### Indian Institute of Technology, Madras
-**Bachelor of Science - BS, Data Science and Applications**
-_(2021 - 2025)_
+## CERTIFICATIONS
+- IIRS - ISRO
+  - Machine Learning to Deep Learning: A Journey for Remote Sensing Data Classification
+- Microsoft
+  - Microsoft Azure Fundamentals (AZ-900)
+- Google
+  - Fundamentals of Digital Marketing
+- Vardhman Mahaveer Open University, Kota
+  - Rajasthan State Certificate in Information Technology
 
-## Certifications and Achievements
-- Coding for Marketers Course
-- Volunteer at Shaastra 2022
-- Certificate of Internship
-- The story of Photoelectric Effect - Course Certificate
-- R-CAT Quizathon Certificate
-- Honors-Awards
+## Honors-Awards
   - L&T Merit Cum Means Scholarship
   - TATA Capital Pankh Scholarship
 
-## Skills
-- Data Science
-- Scalable AI Applications Development
-- Web Applications Development
-  - Python, Flask, VueJs
-- AZ900 Certified
+## PARTICIPATION IN TECHNICAL EVENTS
+- Participated in a Hackathon organized by iNeuron at JECRC University, Jaipur. Built a Blog Application Project.
+- Attended Google Cloud Community Days 2022, Jaipur Edition.
+- Participated in KHOJ Startup Yatra organized by Venture Catalysts at BITS Pilani. Pitched our idea & Secured a place in Top 5 winning Teams.
+
+
+
+
+
+
+
+
+### 📝✂ Languages and Tools
+
+<!-- Your existing languages and tools section -->
+
+
+
+
+---
+
+**My Github Stats**
+
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs?username=ravikumawat7716&show_icons=true&locale=en&layout=compact)
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=ravikumawat7716&show_icons=true&locale=en)
+![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=ravikumawat7716)
+
+**GitHub Trophies**
+
+[![GitHub Trophies](https://github-profile-trophy.vercel.app/?username=ravikumawat7716)](https://github.com/ryo-ma/github-profile-trophy)
+
+---
+
+*Feel free to reach out to me on any of the platforms above! Let's connect and collaborate!*
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 -------------------------------------------------------
 
