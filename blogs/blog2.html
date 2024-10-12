@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DNS Setup, SSL, and HTTP Configuration for Flask Application on AWS EC2</title>
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        /* Inline styles for the blog page */
+        body {
+            background-color: #f9f9f9; /* Light background */
+        }
+        h1 {
+            color: #4caf50; /* Green color for headings */
+        }
+        h2 {
+            color: #4caf50; /* Green color for subheadings */
+        }
+        p {
+            font-size: 14px;
+            line-height: 1.6;
+        }
+        code {
+            background-color: #dff0d8; /* Light green background for code */
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-family: monospace;
+        }
+        pre {
+            background-color: #dff0d8; /* Light green background for preformatted text */
+            padding: 10px;
+            border-radius: 4px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Ravi Kumawat</h1>
+        <p>Research Intern at IIT Ropar | Full Stack Developer | Data Scientist</p>
+        <nav>
+            <ul>
+                <li><a href="../">Home</a></li>
+                <li><a href="../blogs.html">Blogs</a></li>
+                <li><a href="../#projects">Projects</a></li>
+                <li><a href="../#skills">Skills</a></li>
+                <li><a href="../#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="content">
+        <h1>DNS Setup, SSL, and HTTP Configuration for Flask Application on AWS EC2</h1>
+
+        <p>In this guide, we will cover how to set up a custom domain for your Flask application, configure DNS settings, and secure your application with SSL using Let's Encrypt. This guide assumes you have already deployed your Flask application on an AWS EC2 instance.</p>
+
+        <h2>Prerequisites</h2>
+        <ul>
+            <li>Completed the previous deployment steps for your Flask application on AWS EC2.</li>
+            <li>A registered domain name.</li>
+            <li>Basic knowledge of DNS settings.</li>
+        </ul>
+
+        <h2>Step 1: Set Up DNS for Your Domain</h2>
+        <ol>
+            <li><strong>Log in to your domain registrar's website.</strong></li>
+            <li><strong>Navigate to the DNS management section.</strong></li>
+            <li><strong>Add an A record:</strong>
+                <pre><code>Type: A
+Host: @
+Value: your-public-ip
+TTL: 300</code></pre>
+            </li>
+            <li><strong>To add a www subdomain (optional):</strong>
+                <pre><code>Type: CNAME
+Host: www
+Value: your-domain.com
+TTL: 300</code></pre>
+            </li>
+        </ol>
+
+        <h2>Step 2: Update Nginx Configuration</h2>
+        <ol>
+            <li><strong>Edit your Nginx configuration file:</strong>
+                <pre><code>sudo nano /etc/nginx/sites-available/myflaskapp</code></pre>
+            </li>
+            <li><strong>Add the following server block for HTTP:</strong>
+                <pre><code>server {
+    listen 80;
+    server_name your-domain.com www.your-domain.com;  # Replace with your domain
+
+    # Redirect all HTTP requests to HTTPS
+    return 301 https://$host$request_uri;
+}</code></pre>
+            </li>
+            <li><strong>Add a new server block for SSL:</strong>
+                <pre><code>server {
+    listen 443 ssl;
+    server_name your-domain.com www.your-domain.com;
+
+    ssl_certificate /etc/letsencrypt/live/your-domain.com/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/your-domain.com/privkey.pem;
+
+    location / {
+        proxy_pass http://unix:/home/ubuntu/your-repo/myflaskapp.sock;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+    }
+}</code></pre>
+            </li>
+            <li><strong>Save and exit the configuration file.</strong></li>
+        </ol>
+
+        <h2>Step 3: Install Certbot for SSL Certificates</h2>
+        <ol>
+            <li><strong>Install Certbot:</strong>
+                <pre><code>sudo apt install certbot python3-certbot-nginx -y</code></pre>
+            </li>
+            <li><strong>Obtain an SSL certificate:</strong>
+                <pre><code>sudo certbot --nginx -d your-domain.com -d www.your-domain.com</code></pre>
+            </li>
+            <li><strong>Follow the prompts to complete the installation.</strong></li>
+        </ol>
+
+        <h2>Step 4: Test the SSL Configuration</h2>
+        <ol>
+            <li><strong>Test your Nginx configuration:</strong>
+                <pre><code>sudo nginx -t</code></pre>
+            </li>
+            <li><strong>Restart Nginx:</strong>
+                <pre><code>sudo systemctl restart nginx</code></pre>
+            </li>
+        </ol>
+
+        <h2>Step 5: Verify Your Setup</h2>
+        <p>Open your web browser and navigate to:</p>
+        <pre><code>https://your-domain.com</code></pre>
+        <p>You should see your Flask application running securely with HTTPS.</p>
+
+        <h2>Step 6: Enable Automatic SSL Certificate Renewal</h2>
+        <p>To ensure your SSL certificates are renewed automatically:</p>
+        <pre><code>sudo certbot renew --dry-run</code></pre>
+
+        <h2>Additional Notes</h2>
+        <ul>
+            <li>Using both server blocks allows you to manage HTTP and HTTPS traffic effectively, and redirecting HTTP to HTTPS enhances security.</li>
+            <li>Keep your system updated to ensure security patches are applied.</li>
+        </ul>
+    </main>
+
+    <footer>
+        <p>© 2024 Ravi Kumawat. All rights reserved.</p>
+    </footer>
+</body>
+</html>

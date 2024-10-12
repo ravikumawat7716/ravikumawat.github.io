@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deploying a Flask Application on AWS EC2 with Gunicorn and Nginx</title>
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        /* Inline styles for the blog page */
+        body {
+            background-color: #f9f9f9; /* Light background */
+        }
+        h1 {
+            color: #4caf50; /* Green color for headings */
+        }
+        h2 {
+            color: #4caf50; /* Green color for subheadings */
+        }
+        p {
+            font-size: 14px;
+            line-height: 1.6;
+        }
+        code {
+            background-color: #dff0d8; /* Light green background for code */
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-family: monospace;
+        }
+        pre {
+            background-color: #dff0d8; /* Light green background for preformatted text */
+            padding: 10px;
+            border-radius: 4px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Ravi Kumawat</h1>
+        <p>Research Intern at IIT Ropar | Full Stack Developer | Data Scientist</p>
+        <nav>
+            <ul>
+                <li><a href="../">Home</a></li>
+                <li><a href="../blogs.html">Blogs</a></li>
+                <li><a href="../#projects">Projects</a></li>
+                <li><a href="../#skills">Skills</a></li>
+                <li><a href="../#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="content">
+        <h1>Deploying a Flask Application on AWS EC2 with Gunicorn and Nginx</h1>
+
+        <p>This guide will walk you through the process of deploying a Flask application on an AWS EC2 instance using Gunicorn as the WSGI server and Nginx as the reverse proxy.</p>
+
+        <h2>Prerequisites</h2>
+        <ul>
+            <li>An AWS account.</li>
+            <li>Basic knowledge of command line and SSH.</li>
+            <li>A Flask application ready for deployment.</li>
+        </ul>
+
+        <h2>Step 1: Launch an EC2 Instance</h2>
+        <ol>
+            <li><strong>Sign in to your AWS Management Console.</strong></li>
+            <li><strong>Navigate to the EC2 Dashboard.</strong></li>
+            <li><strong>Click on "Launch Instance."</strong></li>
+            <li><strong>Choose an Amazon Machine Image (AMI):</strong> Select an Ubuntu Server (e.g., Ubuntu 20.04 LTS).</li>
+            <li><strong>Choose an Instance Type:</strong> Select an instance type (e.g., t2.micro) and click "Next: Configure Instance Details."</li>
+            <li><strong>Configure Instance Details:</strong> Set up your instance details as needed and click "Next: Add Storage."</li>
+            <li><strong>Add Storage:</strong> Accept the default or modify as needed, then click "Next: Add Tags."</li>
+            <li><strong>Add Tags:</strong> (Optional) Add tags for organization, then click "Next: Configure Security Group."</li>
+            <li><strong>Configure Security Group:</strong>
+                <ul>
+                    <li>Create a new security group or select an existing one.</li>
+                    <li>Allow HTTP (port 80) and SSH (port 22) access from your IP.</li>
+                </ul>
+            </li>
+            <li><strong>Review and Launch:</strong> Review your settings and click "Launch."</li>
+            <li><strong>Select an existing key pair or create a new one for SSH access.</strong></li>
+        </ol>
+
+        <h2>Step 2: Connect to Your EC2 Instance</h2>
+        <ol>
+            <li><strong>Open your terminal (or Command Prompt).</strong></li>
+            <li><strong>Use SSH to connect to your instance:</strong>
+                <pre><code>ssh -i /path/to/your-key.pem ubuntu@your-public-ip</code></pre>
+            </li>
+        </ol>
+
+        <h2>Step 3: Install Necessary Packages</h2>
+        <ol>
+            <li><strong>Update the package index:</strong>
+                <pre><code>sudo apt update
+sudo apt upgrade -y</code></pre>
+            </li>
+            <li><strong>Install Python and pip:</strong>
+                <pre><code>sudo apt install python3 python3-pip python3-venv -y</code></pre>
+            </li>
+            <li><strong>Install Nginx:</strong>
+                <pre><code>sudo apt install nginx -y</code></pre>
+            </li>
+            <li><strong>Install Git:</strong>
+                <pre><code>sudo apt install git -y</code></pre>
+            </li>
+        </ol>
+
+        <h2>Step 4: Clone Your Flask Application Repository</h2>
+        <ol>
+            <li><strong>Navigate to your home directory:</strong>
+                <pre><code>cd ~</code></pre>
+            </li>
+            <li><strong>Clone your repository:</strong>
+                <pre><code>git clone https://github.com/yourusername/your-repo.git
+cd your-repo</code></pre>
+            </li>
+        </ol>
+
+        <h2>Step 5: Set Up Your Flask Application</h2>
+        <ol>
+            <li><strong>Create a virtual environment:</strong>
+                <pre><code>python3 -m venv .venv
+source .venv/bin/activate</code></pre>
+            </li>
+            <li><strong>Install Flask and other dependencies:</strong>
+                <pre><code>pip install -r requirements.txt</code></pre>
+            </li>
+            <li><strong>Ensure your Flask app is ready (e.g., <code>app.py</code>):</strong>
+                <pre><code>from flask import Flask
+
+app = Flask(__name__)
+
+@app.route('/')
+def hello():
+    return "Hello, World!"
+
+if __name__ == "__main__":
+    app.run()</code></pre>
+            </li>
+        </ol>
+
+        <h2>Step 6: Run Your Application with Gunicorn</h2>
+        <ol>
+            <li><strong>Install Gunicorn:</strong>
+                <pre><code>pip install gunicorn</code></pre>
+            </li>
+            <li><strong>Run the Gunicorn server:</strong>
+                <pre><code>gunicorn -w 4 -b 127.0.0.1:5000 app:app &</code></pre>
+            </li>
+        </ol>
+
+        <h2>Step 7: Create a systemd Service for Gunicorn</h2>
+        <ol>
+            <li><strong>Create a Gunicorn service file:</strong>
+                <pre><code>sudo nano /etc/systemd/system/myflaskapp.service</code></pre>
+            </li>
+            <li><strong>Add the following content to the service file:</strong>
+                <pre><code>[Unit]
+Description=gunicorn instance to serve myflaskapp
+After=network.target
+
+[Service]
+User=ubuntu
+Group=www-data
+WorkingDirectory=/home/ubuntu/your-repo
+Environment="PATH=/home/ubuntu/your-repo/.venv/bin"
+ExecStart=/home/ubuntu/your-repo/.venv/bin/gunicorn --workers 3 --bind unix:myflaskapp.sock -m 007 app:app
+
+[Install]
+WantedBy=multi-user.target</code></pre>
+            </li>
+            <li><strong>Reload the systemd daemon to recognize the new service:</strong>
+                <pre><code>sudo systemctl daemon-reload</code></pre>
+            </li>
+            <li><strong>Start the Gunicorn service:</strong>
+                <pre><code>sudo systemctl start myflaskapp</code></pre>
+            </li>
+            <li><strong>Enable the service to start on boot:</strong>
+                <pre><code>sudo systemctl enable myflaskapp</code></pre>
+            </li>
+            <li><strong>Check the status of the service:</strong>
+                <pre><code>sudo systemctl status myflaskapp</code></pre>
+            </li>
+        </ol>
+
+        <h2>Step 8: Configure Nginx</h2>
+        <ol>
+            <li><strong>Create a new Nginx configuration file for your application:</strong>
+                <pre><code>sudo nano /etc/nginx/sites-available/myflaskapp</code></pre>
+            </li>
+            <li><strong>Add the following configuration:</strong>
+                <pre><code>server {
+    listen 80;
+    server_name your-public-ip;  # Replace with your EC2 public IP
+
+    location / {
+        proxy_pass http://unix:/home/ubuntu/your-repo/myflaskapp.sock;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+    }
+}</code></pre>
+            </li>
+            <li><strong>Enable the configuration:</strong>
+                <pre><code>sudo ln -s /etc/nginx/sites-available/myflaskapp /etc/nginx/sites-enabled</code></pre>
+            </li>
+            <li><strong>Test the Nginx configuration:</strong>
+                <pre><code>sudo nginx -t</code></pre>
+            </li>
+            <li><strong>Restart Nginx:</strong>
+                <pre><code>sudo systemctl restart nginx</code></pre>
+            </li>
+        </ol>
+
+        <h2>Step 9: Access Your Application</h2>
+        <p>Open your web browser and navigate to:</p>
+        <pre><code>http://your-public-ip</code></pre>
+        <p>You should see "Hello, World!" or the message defined in your Flask app.</p>
+
+        <h2>Step 10: Review Logs (if needed)</h2>
+        <p>To check for any errors or logs:</p>
+        <pre><code>sudo tail -f /var/log/nginx/error.log</code></pre>
+
+        <h2>Additional Notes</h2>
+        <ul>
+            <li>To run the Gunicorn server in the background persistently, consider using <code>supervisord</code> or <code>systemd</code>.</li>
+            <li>For a production deployment, consider using HTTPS with Let's Encrypt.</li>
+        </ul>
+    </main>
+
+    <footer>
+        <p>© 2024 Ravi Kumawat. All rights reserved.</p>
+    </footer>
+</body>
+</html>
