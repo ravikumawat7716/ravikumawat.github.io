@@ -1,218 +1,316 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ravi Kumawat - Portfolio</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
 
-        body {
-            line-height: 1.6;
-        }
+      body {
+        line-height: 1.6;
+      }
 
-        .header {
-            background: linear-gradient(to right, #1e3a8a, #1e40af);
-            color: white;
-            padding: 4rem 2rem;
-            text-align: center;
-        }
+      .header {
+        background: linear-gradient(to right, #1e3a8a, #1e40af);
+        color: white;
+        padding: 4rem 2rem;
+        text-align: center;
+      }
 
-        .social-links {
-            margin-top: 1rem;
-        }
+      .nav-links {
+        margin-top: 1rem;
+        padding: 1rem;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 8px;
+        display: inline-block;
+      }
 
-        .social-links a {
-            color: white;
-            margin: 0 10px;
-            text-decoration: none;
-        }
+      .nav-links a {
+        color: white;
+        margin: 0 15px;
+        text-decoration: none;
+        padding: 5px 15px;
+        border-radius: 4px;
+        transition: background-color 0.3s;
+      }
 
-        .section {
-            padding: 4rem 2rem;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
+      .nav-links a:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+      }
 
-        .section:nth-child(even) {
-            background-color: #f8fafc;
-        }
+      .social-links {
+        margin-top: 1rem;
+      }
 
-        .section-title {
-            font-size: 2rem;
-            margin-bottom: 2rem;
-            color: #1e3a8a;
-        }
+      .social-links a {
+        color: white;
+        margin: 0 10px;
+        text-decoration: none;
+      }
 
-        .card {
-            background: white;
-            border-radius: 8px;
-            padding: 1.5rem;
-            margin-bottom: 1.5rem;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
+      .section {
+        padding: 4rem 2rem;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
 
-        .experience-title {
-            color: #1e3a8a;
-            font-size: 1.25rem;
-            margin-bottom: 0.5rem;
-        }
+      .section:nth-child(even) {
+        background-color: #f8fafc;
+      }
 
-        .experience-period {
-            color: #3b82f6;
-            margin-bottom: 1rem;
-        }
+      .section-title {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        color: #1e3a8a;
+      }
 
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1.5rem;
-        }
+      .card {
+        background: white;
+        border-radius: 8px;
+        padding: 1.5rem;
+        margin-bottom: 1.5rem;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+      }
 
-        .skill-tag {
-            display: inline-block;
-            background: #dbeafe;
-            color: #1e40af;
-            padding: 0.25rem 0.75rem;
-            border-radius: 9999px;
-            margin: 0.25rem;
-            font-size: 0.875rem;
-        }
+      .card:hover {
+        transform: translateY(-5px);
+      }
 
-        .projects-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 1.5rem;
-        }
+      .experience-title {
+        color: #1e3a8a;
+        font-size: 1.25rem;
+        margin-bottom: 0.5rem;
+      }
 
-        .footer {
-            text-align: center;
-            padding: 1.5rem;
-            background: #1e3a8a;
-            color: white;
-        }
+      .experience-period {
+        color: #3b82f6;
+        margin-bottom: 1rem;
+      }
 
-        ul {
-            list-style-position: inside;
-            margin-left: 1rem;
-        }
+      .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1.5rem;
+      }
+
+      .skill-tag {
+        display: inline-block;
+        background: #dbeafe;
+        color: #1e40af;
+        padding: 0.25rem 0.75rem;
+        border-radius: 9999px;
+        margin: 0.25rem;
+        font-size: 0.875rem;
+        transition: background-color 0.3s;
+      }
+
+      .skill-tag:hover {
+        background: #bfdbfe;
+      }
+
+      .projects-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 1.5rem;
+      }
+
+      .footer {
+        text-align: center;
+        padding: 1.5rem;
+        background: #1e3a8a;
+        color: white;
+      }
+
+      ul {
+        list-style-position: inside;
+        margin-left: 1rem;
+      }
+
+      .blog-link {
+        display: inline-block;
+        background: #3b82f6;
+        color: white;
+        padding: 0.5rem 1rem;
+        border-radius: 4px;
+        text-decoration: none;
+        transition: background-color 0.3s;
+      }
+
+      .blog-link:hover {
+        background: #2563eb;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <header class="header">
-        <h1 style="font-size: 2.5rem; margin-bottom: 0.5rem;">Ravi Kumawat</h1>
-        <p style="font-size: 1.25rem; margin-bottom: 1rem;">AI/ML Consultant | Full-Stack Developer | Research Intern</p>
-        <p>Jaipur, Rajasthan | 3rd Year, BS Degree in Data Science and Applications, IIT Madras</p>
-        <div class="social-links">
-            <a href="https://linkedin.com/in/ravikumawat7716" target="_blank">LinkedIn</a>
-            <a href="https://github.com/ravikumawat7716" target="_blank">GitHub</a>
-            <a href="https://twitter.com/ravikumawat7716" target="_blank">Twitter</a>
-        </div>
+      <h1 style="font-size: 2.5rem; margin-bottom: 0.5rem">Ravi Kumawat</h1>
+      <p style="font-size: 1.25rem; margin-bottom: 1rem">
+        AI/ML Consultant | Full-Stack Developer | Research Intern
+      </p>
+      <p>
+        Jaipur, Rajasthan | 4th Year, BS Degree in Data Science and
+        Applications, IIT Madras
+      </p>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="blog.html">Technical Blog</a>
+      </div>
+      <div class="social-links">
+        <a href="https://linkedin.com/in/ravikumawat7716" target="_blank"
+          >LinkedIn</a
+        >
+        <a href="https://github.com/ravikumawat7716" target="_blank">GitHub</a>
+        <a href="https://twitter.com/ravikumawat7716" target="_blank"
+          >Twitter</a
+        >
+      </div>
     </header>
 
     <section class="section">
-        <h2 class="section-title">About Me</h2>
-        <div class="card">
-            <p>I am a passionate AI/ML consultant and full-stack developer with expertise in machine learning, deep learning, computer vision, and software development. With a strong foundation in data science, I bring innovative solutions to real-world problems, bridging the gap between academia and industry. My journey is defined by impactful projects, leadership roles, and a drive to explore cutting-edge technology for societal benefit.</p>
-        </div>
+      <h2 class="section-title">About Me</h2>
+      <div class="card">
+        <p>
+          I am a passionate AI/ML consultant and full-stack developer with
+          expertise in machine learning, deep learning, computer vision, and
+          software development. With a strong foundation in data science, I
+          bring innovative solutions to real-world problems, bridging the gap
+          between academia and industry. My journey is defined by impactful
+          projects, leadership roles, and a drive to explore cutting-edge
+          technology for societal benefit.
+        </p>
+      </div>
     </section>
 
     <section class="section">
-        <h2 class="section-title">Professional Experience</h2>
-        <div class="card">
-            <h3 class="experience-title">Research Intern – IIT Ropar</h3>
-            <p class="experience-period">Jan 2024 – Present</p>
-            <ul>
-                <li>Working under Dr. Sukrit Gupta to leverage deep learning for computer vision in medical imaging.</li>
-                <li>Contributed to projects addressing real-world challenges while advancing academic knowledge.</li>
-            </ul>
-        </div>
-        <div class="card">
-            <h3 class="experience-title">Teaching Assistant and Project Mentor – IIT Madras</h3>
-            <p class="experience-period">Aug 2023 – Present</p>
-            <ul>
-                <li>Mentored students in integrating AI and full-stack development for practical projects.</li>
-                <li>Enhanced the curriculum with industry-focused solutions, bridging theoretical concepts and real-world applications.</li>
-            </ul>
-        </div>
-        <div class="card">
-            <h3 class="experience-title">Startup Co-Founder – Decarbz</h3>
-            <p class="experience-period">KHOJ Startup Yatra, BITS Pilani, 2023</p>
-            <ul>
-                <li>Secured a place among the top 5 teams.</li>
-                <li>Designed solutions to promote sustainable practices with data-driven approaches.</li>
-            </ul>
-        </div>
+      <h2 class="section-title">Professional Experience</h2>
+      <div class="card">
+        <h3 class="experience-title">Research Intern – IIT Ropar</h3>
+        <p class="experience-period">Jan 2024 – Present</p>
+        <ul>
+          <li>
+            Working under Dr. Sukrit Gupta to leverage deep learning for
+            computer vision in medical imaging.
+          </li>
+          <li>
+            Contributed to projects addressing real-world challenges while
+            advancing academic knowledge.
+          </li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3 class="experience-title">
+          Teaching Assistant and Project Mentor – IIT Madras
+        </h3>
+        <p class="experience-period">Aug 2023 – Present</p>
+        <ul>
+          <li>
+            Mentored students in integrating AI and full-stack development for
+            practical projects.
+          </li>
+          <li>
+            Enhanced the curriculum with industry-focused solutions, bridging
+            theoretical concepts and real-world applications.
+          </li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3 class="experience-title">Startup Co-Founder – Decarbz</h3>
+        <p class="experience-period">KHOJ Startup Yatra, BITS Pilani, 2023</p>
+        <ul>
+          <li>Secured a place among the top 5 teams.</li>
+          <li>
+            Designed solutions to promote sustainable practices with data-driven
+            approaches.
+          </li>
+        </ul>
+      </div>
     </section>
 
     <section class="section">
-        <h2 class="section-title">Technical Skills</h2>
-        <div class="skills-grid">
-            <div class="card">
-                <h3 class="experience-title">Programming Languages</h3>
-                <div>
-                    <span class="skill-tag">Python</span>
-                    <span class="skill-tag">JavaScript</span>
-                    <span class="skill-tag">SQL</span>
-                    <span class="skill-tag">HTML/CSS</span>
-                </div>
-            </div>
-            <div class="card">
-                <h3 class="experience-title">Frameworks and Tools</h3>
-                <div>
-                    <span class="skill-tag">Flask</span>
-                    <span class="skill-tag">Django</span>
-                    <span class="skill-tag">Vue.js</span>
-                    <span class="skill-tag">React</span>
-                    <span class="skill-tag">TensorFlow</span>
-                    <span class="skill-tag">PyTorch</span>
-                    <span class="skill-tag">MongoDB</span>
-                </div>
-            </div>
+      <h2 class="section-title">Technical Skills</h2>
+      <div class="skills-grid">
+        <div class="card">
+          <h3 class="experience-title">Programming Languages</h3>
+          <div>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">SQL</span>
+            <span class="skill-tag">HTML/CSS</span>
+          </div>
         </div>
+        <div class="card">
+          <h3 class="experience-title">Frameworks and Tools</h3>
+          <div>
+            <span class="skill-tag">Flask</span>
+            <span class="skill-tag">Django</span>
+            <span class="skill-tag">Vue.js</span>
+            <span class="skill-tag">React</span>
+            <span class="skill-tag">TensorFlow</span>
+            <span class="skill-tag">PyTorch</span>
+            <span class="skill-tag">MongoDB</span>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="section">
-        <h2 class="section-title">Projects</h2>
-        <div class="projects-grid">
-            <div class="card">
-                <h3 class="experience-title">AI-Powered Medical Imaging</h3>
-                <ul>
-                    <li>Developed deep learning models for advanced diagnostic imaging at IIT Ropar.</li>
-                    <li>Demonstrated real-world applications of computer vision in healthcare.</li>
-                </ul>
-            </div>
-            <div class="card">
-                <h3 class="experience-title">Student Activities Website</h3>
-                <ul>
-                    <li>Led the development of a responsive, interactive platform for Sundarbans House.</li>
-                    <li>Streamlined student activities and communication.</li>
-                </ul>
-            </div>
-            <div class="card">
-                <h3 class="experience-title">Dynamic Timetable System</h3>
-                <ul>
-                    <li>Created a JavaScript-based website that integrates real-time date, day, and time functionalities.</li>
-                    <li>Implemented dynamic schedule display features.</li>
-                </ul>
-            </div>
-            <div class="card">
-                <h3 class="experience-title">StudyBuddy</h3>
-                <ul>
-                    <li>Built a location-based Django application to connect users based on proximity.</li>
-                    <li>Featuring real-time updates and seamless UI integration.</li>
-                </ul>
-            </div>
+      <h2 class="section-title">Projects</h2>
+      <div class="projects-grid">
+        <div class="card">
+          <h3 class="experience-title">AI-Powered Medical Imaging</h3>
+          <ul>
+            <li>
+              Developed deep learning models for advanced diagnostic imaging at
+              IIT Ropar.
+            </li>
+            <li>
+              Demonstrated real-world applications of computer vision in
+              healthcare.
+            </li>
+          </ul>
         </div>
+        <div class="card">
+          <h3 class="experience-title">Student Activities Website</h3>
+          <ul>
+            <li>
+              Led the development of a responsive, interactive platform for
+              Sundarbans House.
+            </li>
+            <li>Streamlined student activities and communication.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3 class="experience-title">Dynamic Timetable System</h3>
+          <ul>
+            <li>
+              Created a JavaScript-based website that integrates real-time date,
+              day, and time functionalities.
+            </li>
+            <li>Implemented dynamic schedule display features.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3 class="experience-title">StudyBuddy</h3>
+          <ul>
+            <li>
+              Built a location-based Django application to connect users based
+              on proximity.
+            </li>
+            <li>Featuring real-time updates and seamless UI integration.</li>
+          </ul>
+        </div>
+      </div>
     </section>
 
     <footer class="footer">
-        Made with ❤️ by Ravi Kumawat
+      <p>Made with ❤️ by Ravi</p>
     </footer>
-</body>
+  </body>
 </html>
